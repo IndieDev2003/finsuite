@@ -2,9 +2,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <header className='flex flex-row px-8 justify-between items-center py-4'>
+    <header className='flex flex-row px-4 md:px-8 justify-between items-center py-4'>
         <h2 className='text-xl'>FinSuite</h2>
-        <ul className='flex flex-row gap-8 text-gray-800'>
+        <ul className='hidden md:flex flex-row gap-8 text-gray-800'>
             <li>Home</li>
             <li>About Us</li>
             <li>Blog</li>

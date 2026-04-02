@@ -10,7 +10,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='md:px-8'>
+    <div className='px-4 md:px-8'>
       <Hero/>
       <Rating/>
       <Hook/>

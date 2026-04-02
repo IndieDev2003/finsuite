@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="px-8 my-4 py-4">
-      <div className="flex flex-row justify-between">
+    <footer className="px-4 md:px-8 my-4 md:py-4">
+      <div className="flex flex-col md:flex-row justify-between">
         <div>
           <h2 className="text-3xl font-bold">FinSuite</h2>
           <p className="text-gray-800 mt-2">
@@ -31,7 +31,7 @@ function Footer() {
           <li className="text-gray-800">Press</li>
         </ul>
       </div>
-      <div className="flex flex-row justify-between mt-10 px-4 py-3 bg-gray-200 rounded-xl items-center text-center text-gray-800">
+      <div className="flex flex-col md:flex-row  md:gap-0 justify-between mt-10 px-4 py-3 bg-gray-200 rounded-xl items-center text-center text-gray-800">
         <h4>Copyright - Gagan Suman</h4>
         <ul className="flex gap-8">
             <li>Terms & Conditions</li>

@@ -12,7 +12,7 @@ function Hook2() {
           Cuttinge edge platform. Send money accross continents safely.
         </p>
       </div>
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-col md:flex-row gap-10">
         <Option text={"Send 100+ Countries"} classname='bg-fuchsia-200'/>
         <Option text={"Convert 100+ Currencies"} classname='bg-blue-200'/>
         <Option text={"Unlimited Transactions"} classname='bg-rose-200'/>
@@ -29,8 +29,8 @@ type OptionType ={
 
 const Option =({text,classname}:OptionType)=>{
     return (
-      <div className="w-1/3 text-center">
-        <div className={`h-86 w-full ${classname} rounded-2xl`}></div>
+      <div className="w-full md:w-1/3 text-center">
+        <div className={`h-64 md:h-86 w-full ${classname} rounded-2xl`}></div>
         <h4 className="text-xl font-semibold mt-4">{text}</h4>
         <p className="text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, omnis.</p>
       </div>
