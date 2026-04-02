@@ -23,7 +23,11 @@ function Hook2() {
 
 export default Hook2;
 
-const Option =({text,classname})=>{
+type OptionType ={
+  text:string,classname:string
+}
+
+const Option =({text,classname}:OptionType)=>{
     return (
       <div className="w-1/3 text-center">
         <div className={`h-86 w-full ${classname} rounded-2xl`}></div>
