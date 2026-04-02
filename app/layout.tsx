@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import { Outfit } from "next/font/google";
 import "./globals.css";
-import Out
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
+const outfit = Outfit({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap", // better font loading
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,11 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${outfit.className} h-full antialiased`}>
+      <body className="">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
